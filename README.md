@@ -1,5 +1,5 @@
 ## 这是一个Mediasoup的集群项目
-把开发meidasoup集群的过程记录下来。
+把开发模块化的meidasoup集群的过程记录下来。
 
 ## 出发点
 1. mediasoup没有提供集群方案，只是隐约说到PipTransport可以实现
