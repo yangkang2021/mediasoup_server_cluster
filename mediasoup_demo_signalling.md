@@ -1,6 +1,7 @@
 # demo信令：
 
 1. getRouterRtpCapabilities：获取rtp支持特性。
+
     ```
    {
     "response": true, 
@@ -288,7 +289,7 @@
             }
         ]
     }
-}
+    }
     ```
 2. join：从已经加入的成员那里创建Consumer会给客户端发newConsumer，并给他们发newPeer。
 3. createWebRtcTransport：在服务端创建transport。
