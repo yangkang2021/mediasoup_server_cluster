@@ -26,7 +26,6 @@
 1. 按照默认的方式把mediasoup-demo编译好。
 2. 进入mediasoup-demo/server/node_modules/mediasoup/worker：
 3. 修改Makefile添加两行：vs2019处也可以时xcode或vs2017，vs2022等
-
 ![](images/7da5d734.png)
 4. 编译Debug版本的worker和生成vs2019项目：
    ```
