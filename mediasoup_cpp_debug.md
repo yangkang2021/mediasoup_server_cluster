@@ -23,7 +23,7 @@
 3. 【附加调试】worker是用nodejs启动的，必须用attach附加到进程调试。
  
 ## 四. mediasoup-worker的c++调试实践
-1. 安装默认的方式把mediasoup-demo编译好。
+1. 按照默认的方式把mediasoup-demo编译好。
 2. 进入mediasoup-demo/server/node_modules/mediasoup/worker：
 3. 修改Makefile添加两行：vs2019处也可以时xcode或vs2017，vs2022等
 
