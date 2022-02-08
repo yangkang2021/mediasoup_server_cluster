@@ -2,6 +2,7 @@
 先上效果：
 ![](images/264001c7.png)
 ![](images/5f4892dd.png)
+
 如果你很熟悉mediasoup，请直接看实践部分
 
 ## 一. 为什么写这个
