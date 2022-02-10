@@ -59,9 +59,10 @@
    - 新建房间时调度到第一个用户所在区域。
    - 也支持非集群部署，没有调度中心单点一样提供服务。
 3. 集群可视化管理web
-4. 四大客户端：pc，Android，ios，web
-
 ![图 1](images/1.png)
+
+4. 四大客户端：pc，Android，ios，web
+   ![图 2](images/f50c4a4f3c653757d1f124e6c74e615b11114c1a2dad328ba99733826f540f4a.png) 
 
 第二步(V2.0)：基于用户或者流。
 - woker的接口从js改成c++
