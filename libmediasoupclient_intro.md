@@ -1,5 +1,28 @@
 # libmediasoupclient介绍
+（后面内容把PeerConnection简写成PC）
 
+## 封装方案
+1. webrtc的使用逻辑：全局一个PCFactory对象，然后每路通话各一个PC对象。
+2. webrtc的核心参数控制：
+    - factory：全局PCFactory最为关键：音频采集播放，音视频编解码器，线程控制等。
+    - config：各个PC分别控制参数RTCConfiguration。
+3. 对比libmediasoupclient：
+   - 每个SendTransport/RecvTransport对应一个PC对象。
+   - 每次创建Transport都可以传入控制参数factory和config。
+   - 不传入控制参数就自动创建默认的factory和config。一般都要控制。
+   - 用户用track来放入数据和接收数据就行了，是yuv格式。
+4. 所以libmediasoupclient的使用方式：
+   - android：用webrtc的android-sdk(google-webrtc-1.0.xxxxx.aar)的java创建pcfactory给libmediasoupclient使用。
+   - ios：用webrtc的ios-sdk(WebRTC.framework)的oc接口创建pcfactory给libmediasoupclient使用。
+   - 桌面开发：C++直接自己创建pcfactory给libmediasoupclient使用。
+
+5. 桌面开发扩展：
+   - 底层统一websokcet实现protoo协议。
+   - 增加设备管理模块：音视频采集和渲染模块。
+   - 增加自定编解码器：cuda和intel sdk。
+   - 增加图像预处理器：集成opencv和深度学习。
+ 
+ 
 ## libmediasoupclient c++ sdk api 非常简单：
 1. mediasoupclient：全局初始化和清理。
 2. Device：代表一个终端，对应一个router。
@@ -30,6 +53,8 @@
 3. libmediasoupclient的接口需要webrtc的部分类：如StreamTrack和Peerconnectionfacotry。
 4. libmediasoupclient本身只提供静态库。
 5. 总结：libmediasoupclient要发布的话：需要合并更多webrtc的库，提取webrtc头文件给用户，并且用户要会webrtc的一些api。
+   
+
 ---
 ## 对libmediasoupclient扩展demo模块:
 pc做native开发，发现webrtc自带的device module有很多bug，现在有三个方案：
