@@ -9,7 +9,7 @@
     - 依赖包列表
     ![图 1](images/6edddc7ed519dc5e31fda8f6e3edb220e41b1b7f891eb72c5b642d544c2d5003.png)  
 4. 下载openssl时候证书验证失败：
-    - Python安装目录(如C:\Anaconda3)\Lib\urllib\request.py 在import ssl后加入了一行：
+    - Python安装目录(如C:\Anaconda3)\Lib\urllib\request.py 在import ssl后加入了一行(不用了记得改回去)：
     ```
       ssl._create_default_https_context = ssl._create_unverified_context
     ```
