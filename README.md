@@ -86,7 +86,8 @@
 
 ## mediasoup知识体系
 1. [mediasoup-demo编译](mediasoup_build.md)
-2. [mediasoup-demo信令](mediasoup_demo_signalling.md)
-3. [mediasoup的c++调试(vs2019/xcode/gdb)](mediasoup_cpp_debug.md)
-4. [libmediasoupclient介绍](libmediasoupclient_intro.md)
+2. [mediasoup-demo的docker部署](mediasoup_docker.md)
+3. [mediasoup-demo信令](mediasoup_demo_signalling.md)
+4. [mediasoup的c++调试(vs2019/xcode/gdb)](mediasoup_cpp_debug.md)
+5. [libmediasoupclient介绍](libmediasoupclient_intro.md)
 
