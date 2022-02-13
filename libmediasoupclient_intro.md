@@ -48,8 +48,8 @@
 
 
 ## pc的libmediasoupclient的不足:
-1. libmediasoupclient的库依赖webrtc.lib，需要自己去编译后加入编译。而且仅仅一个webrtc.lib时不够。
-2. libmediasoupclient的头文件又依赖了webrtc的头文件。，需要添加webrtc的头文件还宏。
+1. libmediasoupclient的库依赖webrtc.lib，需要自己去编译后加入编译。而且仅仅一个webrtc.lib是不够的。
+2. libmediasoupclient的头文件又依赖了webrtc的头文件。，需要添加webrtc的头文件和一些宏。
 3. libmediasoupclient的接口需要webrtc的部分类：如StreamTrack和Peerconnectionfacotry。
 4. libmediasoupclient本身只提供静态库。
 5. 总结：libmediasoupclient要发布的话：需要合并更多webrtc的库，提取webrtc头文件给用户，并且用户要会webrtc的一些api。
@@ -61,3 +61,8 @@ pc做native开发，发现webrtc自带的device module有很多bug，现在有�
 1. 完善和优化webrtc的device module
 2. 从chromium/media移植
 3. 用obs实现一个device module。屏幕录像啥的都有
+
+
+Markdown TODO:
+1. 带颜色的文字，大小：$\color{red}{红色字}$
+2. 内嵌html
