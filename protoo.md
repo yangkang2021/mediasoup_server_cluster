@@ -5,7 +5,7 @@
     - 但没有实现网络传输transport，需要用户按照接口实现网络传输，可以用websocket或tcp，甚至dup实现。
     - 消息分三类：
         - Request(request，id，method，data)
-            - <span style="background-color: #red"><font size=4 color=#DC143C> 请求消息，回调给用户处理并需要回复：accept或reject。</font></span>
+            - <font size=4 color=#DC143C> 请求消息，回调给用户处理并需要回复：accept或reject。</font>
         - Response(response，id，ok，data/errorCode/errorReason)
             - 回复消息，发包结果需要回调给用户：resolve或reject。
         - Notification(notification，method，data)
