@@ -15,11 +15,12 @@
 3. 要做到【命名空间】隔离不同的用户群。
 4. 要做集群的可视化监控管理
 5. 转发到传统直播如RTMP服务器做大规模直播。
-6. 转发到存储服务器做存储。
+6. 转发到存储服务器做存储，比如云存储。
 7. 媒体和信令分离
 8. 支持不同的部署模式：全球/全国/区域/私网/单机。
 9. 全c++高性能服务器。
 10. 调度和流量管理：redis/rabitmq/myqsl调度。
+11. 支持单端口webrtc
 
 ## 方案对比
 
@@ -91,4 +92,6 @@
 3. [mediasoup-demo信令](mediasoup_demo_signalling.md)
 4. [mediasoup的c++调试(vs2019/xcode/gdb)](mediasoup_cpp_debug.md)
 5. [libmediasoupclient介绍](libmediasoupclient_intro.md)
+6. [mediasoup-demo的android客户端代码介绍](mediasoup_demo_android_client.md)
+7. [protoo使用与实现](protoo.md)
 

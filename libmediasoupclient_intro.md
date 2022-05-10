@@ -61,8 +61,3 @@ pc做native开发，发现webrtc自带的device module有很多bug，现在有�
 1. 完善和优化webrtc的device module
 2. 从chromium/media移植
 3. 用obs实现一个device module。屏幕录像啥的都有
-
-
-Markdown TODO:
-1. 带颜色的文字，大小：$\color{red}{红色字}$
-2. 内嵌html
