@@ -35,7 +35,7 @@
    4. 断开后等客户端重连。
    
     ```
-   //创建WebSocketServer，
+   //创建WebSocketServer，需要提前创建httpServer
     protooWebSocketServer = new protoo.WebSocketServer(httpsServer,
     {
         maxReceivedFrameSize     : 960000, // 960 KBytes.
