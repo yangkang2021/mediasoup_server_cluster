@@ -27,7 +27,7 @@
     this._protoo.on('request', async (request, accept, reject) =>{});
     this._protoo.on('notification', (notification) =>{});
     ```
-2. 官方js版本protoo-server的实现用法
+3. 官方js版本protoo-server的实现用法
 
    1. 内部封装了WebSocketServer，WebSocket传输通道，Room, Peer(ws客户端);
    2. WebSocketServer通过connectionrequest事件处理连接请求，accept获取WebSocketTransport。
@@ -58,3 +58,5 @@
         peer.on('close', () =>{});
     }
     ```
+4. demo的客户端请求协议
+![](.protoo_images/4ef19bf6.png)

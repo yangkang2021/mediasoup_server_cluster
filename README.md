@@ -94,4 +94,5 @@
 5. [libmediasoupclient介绍](libmediasoupclient_intro.md)
 6. [mediasoup-demo的android客户端代码介绍](mediasoup_demo_android_client.md)
 7. [protoo使用与实现](protoo.md)
+8. [mediasoup客户端原生c++开发项目](mediasoup_client_native.md)
 
