@@ -1,4 +1,4 @@
-## 这是一个Mediasoup的集群项目
+## 这是一个Mediasoup Server的集群项目
 把开发一个【meidasoup极简的模块化的集群】的过程记录下来。
 
 [项目地址：https://github.com/yangkang2021/mediasoup_cluster](https://github.com/yangkang2021/mediasoup_cluster)
