@@ -84,9 +84,9 @@
      - 服务信息：worker数，room数，用户数，流数，
      - 用户信息：用户id，带宽，地域。
 2. V2.0开发：基于V1.0对media的了解
-3. 私人联系方式
-
-
+3. 集群效果
+![](.README_images/10d09053.png)
+![](.README_images/a834dacf.png)
 ![](.README_images/447b9b75.png)
 
 
