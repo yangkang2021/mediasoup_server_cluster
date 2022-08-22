@@ -85,8 +85,21 @@
      - 用户信息：用户id，带宽，地域。
 2. V2.0开发：基于V1.0对media的了解
 3. 集群效果
+![](.README_images/c244013b.png)
+![](.README_images/f0923bcf.png)
+![](.README_images/f6b45107.png)
+![](.README_images/28079624.png)
+![](.README_images/8da8761c.png)
 ![](.README_images/10d09053.png)
 ![](.README_images/a834dacf.png)
+![](.README_images/4e112156.png)
+![](.README_images/7bbd7ce4.png)
+![](.README_images/efe57df3.png)
 ![](.README_images/447b9b75.png)
 
 
+
+客户端要拿到每一路音频的音量，三个方案：
+1. 从audiotrack拿到data自己计算。              缺点：耗cpu，Android和ios得改webrtc代码。
+2. 从webrtc的peerConnect的统计里面拿到。 缺点：频率可能不够，统计一般1秒一次。 
+3. mediasoup server已经统计了音量，可以实时下发。 缺点：耗费信令流量带宽。
